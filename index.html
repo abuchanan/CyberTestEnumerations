@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Common Test Enumeration</title>
+  <script>
+   var CTEs = {
+  "CTEs": [
+    {
+      "Title": "Cyber test and evaluation",
+      "Description": "Cyber test and evlautaion informs decision makers about how well the system meets requirements and is able to perform the mission through its resilience, effectiveness, suitability, and survivability. This root node has been decomposed to enable more accurate test design by cross referencing DOD regulation, other enumerations, DCO frameworks, OCO frameworks, general system decomposition, as well as general mission decomposition.",
+      "Intent": [
+        "Inform decision makers."
+      ],
+      "References": "DODI 5000.89",
+      "Data Elements": [],
+      "Parents": []
+    },
+    {
+      "Title": "Cyber system verification",
+      "Description": "Cyber system verification is a combination of ensuring the system meets the requirements as well as ensuring applicable cyber resilience and survivability as it relates to mission areas (mission and safety critical functions) in a DT&E context.",
+      "References": "DODI 5000.89, DODM 5000.UY",
+      "Data Elements": [
+        "System Requirements: Most likely captured in SRDs and RDP. Additionally, requirements should be identified through MRAP-Cs.",
+        "Critical Functions: Both mission and safety critical functions are derived from mission areas and identified during the mission impact analysis of a MRAP-C. System views typically allude to the critical functions while DRMs allude to the mission areas."
+      ],
+      "Parents": [
+        0
+      ]
+    },
+    {
+      "Title": "Characterize the cyber terrain",
+      "Description": "This description has not yet been developed. This text is a placeholder and a description will be genereated through more decomposition of regulation, frameworks, and other enumerations.",
+      "References": "DODI 5000.89",
+      "Data Elements": [],
+      "Parents": [
+        1
+      ]
+    },
+    {
+      "Title": "System prevents cyber exploitation and attack",
+      "Description": "This description has not yet been developed. This text is a placeholder and a description will be genereated through more decomposition of regulation, frameworks, and other enumerations.",
+      "References": "DODI 5000.89",
+      "Data Elements": [],
+      "Parents": [
+        1
+      ]
+    },
+    {
+      "Title": "Cyber mission verification",
+      "Description": "This description has not yet been developed. This text is a placeholder and a description will be genereated through more decomposition of regulation, frameworks, and other enumerations.",
+      "References": "DODI 5000.89",
+      "Data Elements": [],
+      "Parents": [
+        0
+      ]
+    },
+    {
+      "Title": "Cyber resilience",
+      "Description": "This description has not yet been developed. This text is a placeholder and a description will be genereated through more decomposition of regulation, frameworks, and other enumerations.",
+      "References": "",
+      "Data Elements": [],
+      "Parents": [
+        4
+      ]
+    },
+    {
+      "Title": "Cyber suitability",
+      "Description": "This description has not yet been developed. This text is a placeholder and a description will be genereated through more decomposition of regulation, frameworks, and other enumerations.",
+      "References": "",
+      "Data Elements": [],
+      "Parents": [
+        4
+      ]
+    },
+    {
+      "Title": "Cyber survivability",
+      "Description": "This description has not yet been developed. This text is a placeholder and a description will be genereated through more decomposition of regulation, frameworks, and other enumerations.",
+      "References": "",
+      "Data Elements": [],
+      "Parents": [
+        4
+      ]
+    },
+    {
+      "Title": "Cyber effectiveness",
+      "Description": "This description has not yet been developed. This text is a placeholder and a description will be genereated through more decomposition of regulation, frameworks, and other enumerations.",
+      "References": "",
+      "Data Elements": [],
+      "Parents": [
+        4
+      ]
+    },
+    {
+      "Title": "Inventory system assets",
+      "Description": "This description has not yet been developed. This text is a placeholder and a description will be genereated through more decomposition of regulation, frameworks, and other enumerations.",
+      "References": "D3FEND",
+      "Data Elements": [],
+      "Parents": [
+        2
+      ]
+    },
+    {
+      "Title": "Map system characteristics",
+      "Description": "This description has not yet been developed. This text is a placeholder and a description will be genereated through more decomposition of regulation, frameworks, and other enumerations.",
+      "References": "D3FEND",
+      "Data Elements": [],
+      "Parents": [
+        2
+      ]
+    },
+    {
+      "Title": "System detects cyber exploitation and attack",
+      "Description": "This description has not yet been developed. This text is a placeholder and a description will be genereated through more decomposition of regulation, frameworks, and other enumerations.",
+      "References": "DODM 5000.UY",
+      "Data Elements": [],
+      "Parents": [
+        1
+      ]
+    },
+    {
+      "Title": "System contains cyber exploitation and attack",
+      "Description": "Assess the systems ability to actively and passively contain threats in a cooperative and adversarial context. Passive containment will be assessed by the systems inherent ability to contain through design and policy while active containment will be assessed by the system and operators ability to manually and automatically respond through isolation.",
+      "References": "DODM 5000.UY, D3-ISOLATE",
+      "Data Elements": [],
+      "Parents": [
+        1
+      ]
+    },
+    {
+      "Title": "System mitigates cyber exploitation and attack",
+      "Description": "This description has not yet been developed. This text is a placeholder and a description will be genereated through more decomposition of regulation, frameworks, and other enumerations.",
+      "References": "DODM 5000.UY",
+      "Data Elements": [],
+      "Parents": [
+        1
+      ]
+    },
+    {
+      "Title": "System recovers from cyber exploitation and attack",
+      "Description": "This description has not yet been developed. This text is a placeholder and a description will be genereated through more decomposition of regulation, frameworks, and other enumerations.",
+      "References": "DODM 5000.UY",
+      "Data Elements": [],
+      "Parents": [
+        1
+      ]
+    },
+    {
+      "Title": "System adapts to cyber exploitation and attack",
+      "Description": "This description has not yet been developed. This text is a placeholder and a description will be genereated through more decomposition of regulation, frameworks, and other enumerations.",
+      "References": "DODM 5000.UY",
+      "Data Elements": [],
+      "Parents": [
+        1
+      ]
+    },
+    {
+      "Title": "Assess access mediation and control",
+      "Description": "Access mediation is the process of granting or denying specific requests to: 1) obtain and use information and related information processing services; and 2) enter specific physical facilities",
+      "References": "D3-AMED",
+      "Data Elements": [],
+      "Parents": [
+        21
+      ]
+    },
+    {
+      "Title": "Assess access control and policy administration",
+      "Description": "Access policy administration is the systematic process of defining, implementing, and managing access control policies that dictate user permissions to resources.",
+      "References": "D3-APA",
+      "Data Elements": [],
+      "Parents": [
+        21
+      ]
+    },
+    {
+      "Title": "Assess content filtering",
+      "Description": "Content Filtering techniques aid in the process of analyzing an input file for malicious or erroneous content and outputing a sanitized version. This item needs to be reassessed. content filtering can apply to access/exec/net, so look at breaking it out appropriately (these are more MOPs)",
+      "References": "D3-CF",
+      "Data Elements": [],
+      "Parents": [
+        12
+      ]
+    },
+    {
+      "Title": "Assess execution isolation and containment",
+      "Description": "Execution Isolation techniques prevent application processes from accessing non-essential system resources, such as memory, devices, or files.",
+      "References": "D3-EI",
+      "Data Elements": [],
+      "Parents": [
+        12
+      ]
+    },
+    {
+      "Title": "Assess network isolation and containment",
+      "Description": "Network Isolation techniques prevent network hosts from accessing non-essential system network resources.",
+      "References": "D3-NI",
+      "Data Elements": [],
+      "Parents": [
+        12
+      ]
+    },
+    {
+      "Title": "Assess access isolation and containment",
+      "Description": "Assess the systems ability to contain a cyber intrusion to its already established level of permissions and access.",
+      "References": "",
+      "Data Elements": [],
+      "Parents": [
+        12
+      ]
+    }
+  ]
+}
+  </script>
+  <script>
+	// window.location.hash returns "#node=system_verification"
+	const hash = window.location.hash.substring(1); // removes the leading '#'
+	const params = new URLSearchParams(hash);
+	const node = params.get('node');
+	console.log(node);
+
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f8fa;
+      color: #161616;
+      min-height: 100vh;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 32px 56px 0 56px;
+    }
+    .header-left {
+      font-weight: 500;
+      font-size: 20px;
+      letter-spacing: 0.01em;
+    }
+    .header-right {
+      display: flex;
+      gap: 40px;
+      font-size: 16px;
+    }
+    .header-right a {
+      color: #161616;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .header-right a:hover {
+      color: #2186eb;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 120px;
+      margin-bottom: 40px;
+    }
+    .search-title {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+    .search-box {
+      width: 580px;
+      max-width: 95vw;
+      padding: 12px 16px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: 1px solid #e0e4ea;
+      background: #fff;
+      outline: none;
+      margin-bottom: 80px;
+      transition: border 0.2s;
+      box-sizing: border-box;
+    }
+    .search-box:focus {
+      border: 1.5px solid #2186eb;
+    }
+    .tree {
+      width: 700px;
+      max-width: 98vw;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-bottom: 72px;
+    }
+    .tree-node {
+      border-radius: 6px;
+      padding: 18px 0 18px 22px;
+      font-size: 18px;
+      background: #e6edf2;
+      color: #8c99a6;
+      font-weight: 500;
+      box-sizing: border-box;
+    }
+    .tree-node.active {
+      background: #aeb8c1;
+	  width: calc(100% - 120px);
+      margin-left: 60px;
+      color: #fff;
+    }
+    .tree-node.child {
+      margin-left: 120px;
+	  width: calc(100% - 120px);
+      background: #e6edf2;
+      color: #8c99a6;
+      font-weight: 500;
+    }
+    .tree-node.parent {
+	  width: calc(100% - 120px);
+      background: #e6edf2;
+      color: #8c99a6;
+      font-weight: 500;
+    }
+    .tree-node.child2 {
+      margin-left: 120px;
+    }
+    /* Responsive tweaks */
+    @media (max-width: 700px) {
+      header, main {
+        padding-left: 14px !important;
+        padding-right: 14px !important;
+      }
+      .tree, .search-box {
+        width: 99vw;
+        max-width: 99vw;
+      }
+    }
+	.tree-node {
+	  /* ...existing styles... */
+	  transition: background 0.15s, color 0.15s, box-shadow 0.15s;
+	}
+	.tree-node:hover {
+	  background: #d3e1ed;
+	  color: #2186eb;
+	  cursor: pointer;
+	  box-shadow: 0 2px 12px rgba(33, 134, 235, 0.08);
+	}
+	.tree-node.active:hover {
+	  background: #aeb8c1;
+	  color: #fff;
+	  box-shadow: none;
+	  cursor: default;
+	}
+
+
+
+    /* Details Section */
+    .details {
+      width: 580px;
+      max-width: 97vw;
+      margin: 0 auto;
+      margin-top: 40px;
+    }
+    .details label {
+      font-size: 12px;
+      font-weight: 400;
+      color: #8c99a6;
+      display: block;
+      margin-top: 20px;
+      margin-bottom: 4px;
+      letter-spacing: 0.03em;
+    }
+    .details .title {
+      font-size: 16px;
+      font-weight: 500;
+      color: #161616;
+      margin-bottom: 8px;
+      margin-top: 2px;
+    }
+    .details .attribute {
+      font-size: 15px;
+      color: #222;
+      margin-bottom: 18px;
+      line-height: 1.5;
+    }
+    .details label:first-child {
+      margin-top: 0;
+    }
+	
+	/*  Infor Box  */
+	.info-box {
+	  display: none;
+	  position: fixed;
+	  top: 70px;
+	  left: 50%;
+	  transform: translateX(-50%);
+	  min-width: 300px;
+	  max-width: 90vw;
+	  background: #f7fafc;
+	  color: #222;
+	  border-radius: 12px;
+	  box-shadow: 0 6px 32px rgba(0,0,0,0.12);
+	  border: 1.5px solid #e0e4ea;
+	  padding: 26px 36px 22px 26px;
+	  z-index: 9999;
+	  font-size: 17px;
+	  font-family: 'Inter', Arial, sans-serif;
+	  transition: opacity 0.18s;
+	  opacity: 1;
+	}
+	.info-box .close-btn {
+	  position: absolute;
+	  top: 12px;
+	  right: 18px;
+	  font-size: 21px;
+	  color: #a5b2c2;
+	  cursor: pointer;
+	  transition: color 0.18s;
+	}
+	.info-box .close-btn:hover {
+	  color: #2186eb;
+	}
+	.info-box-content {
+	  margin-top: 6px;
+	}
+
+	@media (max-width: 600px) {
+	  .info-box {
+		padding: 16px 10px 15px 10px;
+		font-size: 15px;
+		min-width: 160px;
+	  }
+	}
+
+  </style>
+ 
+</head>
+<body>
+  <header>
+    <div class="header-left">Cyber Test Enumeration</div>
+    <div class="header-right">
+      <a href="#" onclick="showPage('pageEnum')">Enumeration</a>
+		<a href="#" onclick="showPage('pageUser')">User Guide</a>
+		<a href="#" onclick="showPage('pageDev')">Dev Guide</a>
+    </div>
+  </header>
+  <div id="pageEnum" style="display:none">
+  <main>
+	<!-- Info Box (hidden by default) -->
+	<div id="infoBox" class="info-box">
+	  <span id="infoBoxClose" class="close-btn">&times;</span>
+	  <div class="info-box-content" id="infoBoxContent">
+		This is your info message!
+	  </div>
+	</div>
+
+
+    <div class="search-title">Search Cyber Test Enumerations</div>
+    <input class="search-box" type="text" placeholder="Search" onchange="showInfoBox('INFO: Searching for specific cyber test enumerations has not been added yet.')">
+
+    <div class="tree">
+      <!--<div class="tree-node parent">Cyber test and evaluation</div>
+      <div class="tree-node active">Cyber system verification</div>
+      <div class="tree-node child">Characterize the cyber terrain</div>
+      <div class="tree-node child">System prevents cyber exploitation and attack</div>-->
+    </div>
+  </main>
+
+  <section class="details">
+    <label>Title</label>
+    <div class="title">Cyber system verification</div>
+
+    <label>Description</label>
+    <div class="attribute">
+      System verification, commonly referred to as developmental test and evaluation, in a cyber context. The children of this node should are derived from DOD regulation. These children should be tested in a cooperative and adversarial contexts as applicable through general test objectives, to specific test objectives, down to measures of performance.
+    </div>
+
+    <label>References</label>
+    <div class="attribute">DODI 5000.89 3.5</div>
+
+    <label>Data Elements</label>
+    <div class="attribute">System requirements</div>
+  </section>
+  </div>
+  
+  
+  
+  <div id="pageUser" style="display:none">
+  <section class="details" style="width:60%;">
+    <h1>CTE User Guide</h1>
+    <div class="attribute">Cyber Test Enumerations (CTEs) are hierarchical and general concepts for designing cyber test and evaluation campaigns. CTEs are a decomposition of regulations and standards that are meant to be overlayed with system decomposition to design system verification objectives and overlayed with mission decomposition to design mission validation measures.</div>
+
+    <h2>1. Purpose</h2>
+    <div class="attribute">The purpose of CTEs are to enable cyber test planners to design credible test campaigns, enable integrated test, lower the barrier of entry for testers, and standardize cyber test design across organizations. Standardizing test design will create second order effects of easing trainig, making RFIs more clear, as well as making lab and range requirements less ambiguous.</div>
+
+    <h2>2. Usage</h2>
+    <div class="attribute">CTEs are to be used to structure the test design process. Once a test strategy brief (TSB) has been performed, the test design processes starts. In an ideal world, all CTEs that can be applied to the system will be integrated into the test design. The test design items will then be prioritized through test concept briefs (TCBs).</div>
+    <div class="attribute">System verification portion of the test design will be comprised of high level general test objectives (GTOs) which are broken out into specific test objectives (STOs) and then broken out into measurable and testable measures of performance (MOPs). The CTEs will assist in generating GTOs, STOs, and MOPs. An example being, if a test organization was requested to test the integration of an enterprise intrusion detection system in a DT&E context, then a GTO would be "Systems ability to detect cyber exploitation and attack" with STOs breaking down the specifics (such as out of band and in band) and MOPs that measure the coverage and relevance of PCAP, event logs, and other data elements.</div>
+    <div class="attribute">Mission validation usage will be described at a later point.</div>
+	
+	
+    <h3>2.1 Dependencies</h3>
+    <div class="attribute">All CTEs that are applicable to the system should be tested. However, the use of developmental evaluation frameworks (DEF), operational evaluation frameworks (OEF), integrated decision support keys (IDSK), and fielding decision (FD) / operational acceptance (OA) criteria. Additionally, test design may also be influenced by contractor testing, independent testing, live testing, and lab testing.</div>
+	
+	<h3>2.2 Outputs</h3>
+    <div class="attribute">I need to elaborate on how this should help generate a test design with common identified data elements between DT and OT.</div>
+
+    <h2>3. Background</h2>
+    <div class="attribute">Write an overview of the background of CTEs (how they were developed) and put the table that cross walks them.</div>
+	
+    <h3>3.1 CTE Creation</h3>
+    <div class="attribute">Describe the regulation decomposition (DODM 5000.UY & CSEIG) then describe the items included in the crosswalk (enumerations, ATT&CK, D3FEND, CSF2, SPARTA) then describe the cooperative/adversarial relationship, then describe the SV vs MV, then describe </div>
+  </section>
+  </div>
+  
+  
+  <div id="pageDev" style="display:none">
+  </div>
+  
+</body>
+<script>
+	function showPage(pageId) {
+	  // List all the IDs you want to control
+	  const pageIds = ['pageUser', 'pageEnum', 'pageDev'];
+	  pageIds.forEach(id => {
+		document.getElementById(id).style.display = 'none';
+	  });
+	  const showDiv = document.getElementById(pageId);
+	  if (showDiv) showDiv.style.display = 'block';
+	}
+
+</script>
+ <script>
+		function showInfoBox(message) {
+		  document.getElementById('infoBoxContent').textContent = message;
+		  const infoBox = document.getElementById('infoBox');
+		  infoBox.style.display = 'block';
+		  infoBox.style.opacity = '1';
+		}
+
+		// Hide info box when the close button is clicked
+		document.getElementById('infoBoxClose').onclick = function() {
+		  document.getElementById('infoBox').style.opacity = '0';
+		  setTimeout(() => {
+			document.getElementById('infoBox').style.display = 'none';
+		  }, 180);
+		};
+ </script>
+ <script>
+	 function populateDetails(index) {
+  const cte = CTEs.CTEs[index];
+  if (!cte) return;
+
+  const detailsSection = document.querySelector('.details');
+  detailsSection.innerHTML = ''; // Clear previous content
+
+  // Helper: recursively collect all parent chains (returns array of arrays of {index, title})
+  function getAllParentChains(idx, currentChain = []) {
+    const node = CTEs.CTEs[idx];
+    if (!node.Parents || node.Parents.length === 0) {
+      // Root node, return current chain starting from here
+      return [[{ index: idx, title: node.Title }, ...currentChain]];
+    }
+    let allChains = [];
+    for (const parentIdx of node.Parents) {
+      const parentNode = CTEs.CTEs[parentIdx];
+      const parentChains = getAllParentChains(parentIdx, [{ index: idx, title: node.Title }, ...currentChain]);
+      allChains = allChains.concat(parentChains);
+    }
+    return allChains;
+  }
+
+  Object.entries(cte).forEach(([key, value]) => {
+    // Create and append the label
+    const label = document.createElement('label');
+    label.textContent = key;
+    detailsSection.appendChild(label);
+
+    // Create and append the value
+    const valueDiv = document.createElement('div');
+    valueDiv.className = key === "Title" ? 'title' : 'attribute';
+
+    // Special handling for "Parents" as multiple clickable breadcrumbs
+    if (key === 'Parents') {
+      if (Array.isArray(value) && value.length) {
+        const allChains = getAllParentChains(index);
+        if (allChains.length) {
+          allChains.forEach((chain, cIdx) => {
+            chain.forEach((parent, idx) => {
+              if (idx < chain.length - 1) {
+                // Each parent in the chain except the current node (last)
+                const crumb = document.createElement('span');
+                crumb.textContent = parent.title;
+                //crumb.style.color = '#2186eb';
+                crumb.style.cursor = 'pointer';
+                crumb.style.textDecoration = 'underline';
+                crumb.onclick = () => {
+                  populateTree(parent.index);
+                  populateDetails(parent.index);
+                };
+                valueDiv.appendChild(crumb);
+
+                // Separator
+                const sep = document.createElement('span');
+                sep.textContent = ' / ';
+                valueDiv.appendChild(sep);
+              } else {
+                // The last node in the chain is the current node, just display the title, no click
+                const currentSpan = document.createElement('span');
+                currentSpan.textContent = parent.title;
+                valueDiv.appendChild(currentSpan);
+              }
+            });
+            // Separator between different chains, if more than one
+            if (cIdx < allChains.length - 1) {
+              valueDiv.appendChild(document.createElement('br'));
+            }
+          });
+        } else {
+          valueDiv.textContent = '(none)';
+        }
+      } else {
+        valueDiv.textContent = '(none)';
+      }
+    }
+    // Handle arrays and objects
+    else if (Array.isArray(value)) {
+      valueDiv.textContent = value.length ? value.join('\r ') : '(none)';
+    } else if (typeof value === 'object' && value !== null) {
+      valueDiv.textContent = JSON.stringify(value, null, 2);
+      valueDiv.style.whiteSpace = 'pre-wrap';
+    } else {
+      valueDiv.textContent = (value !== undefined && value !== null && value !== '') ? value : '(none)';
+    }
+    detailsSection.appendChild(valueDiv);
+  });
+}
+
+
+
+
+	function populateTree(activeIndex) {
+		const treeDiv = document.querySelector('.tree');
+		treeDiv.innerHTML = ''; // Clear previous content
+
+		const CTEList = CTEs.CTEs;
+
+		// Helper: Find all children of a node
+		function getChildren(idx) {
+			populateDetails(idx);
+			return CTEList
+			  .map((cte, i) => ({...cte, _idx: i}))
+			  .filter(cte => cte.Parents && cte.Parents.includes(idx));
+		}
+
+		// Helper: Get all parent indexes recursively (support for multi-level)
+		function getParentChain(idx) {
+			let chain = [];
+			let current = idx;
+			while (CTEList[current].Parents && CTEList[current].Parents.length > 0) {
+			  const parentIdx = CTEList[current].Parents[0];
+			  chain.unshift(parentIdx);
+			  current = parentIdx;
+			}
+			return chain;
+		}
+
+		// 1. Render parent chain (with .parent class)
+		// NOTE: The commented code will generate the entire chain of parents
+		/*const parentChain = getParentChain(activeIndex);
+		parentChain.forEach(parentIdx => {
+			const nodeDiv = document.createElement('div');
+			nodeDiv.className = 'tree-node parent';
+			nodeDiv.textContent = CTEList[parentIdx].Title;
+			treeDiv.appendChild(nodeDiv);
+			
+			nodeDiv.onclick = () => populateTree(parentIdx);  // for parents
+		});*/
+		// NOTE: If you want to generate the entire chain, comment out the below code block and uncomment the above
+		const parentChain = CTEList[activeIndex].Parents || [];
+		  parentChain.forEach(parentIdx => {
+			const nodeDiv = document.createElement('div');
+			nodeDiv.className = 'tree-node parent';
+			nodeDiv.textContent = CTEList[parentIdx].Title;
+			// Optional: add click handler to allow navigation
+			nodeDiv.onclick = () => populateTree(parentIdx);
+			treeDiv.appendChild(nodeDiv);
+		  });
+
+		// 2. Render active node
+		const activeNodeDiv = document.createElement('div');
+		activeNodeDiv.className = 'tree-node active';
+		activeNodeDiv.textContent = CTEList[activeIndex].Title;
+		treeDiv.appendChild(activeNodeDiv);
+
+		// 3. Render children of active node (with .child class)
+		const children = getChildren(activeIndex);
+		children.forEach(child => {
+			const nodeDiv = document.createElement('div');
+			nodeDiv.className = 'tree-node child';
+			nodeDiv.textContent = child.Title;
+			treeDiv.appendChild(nodeDiv);
+		
+			nodeDiv.onclick = () => populateTree(child._idx); // for children
+
+		});
+	}
+
+	// Example usage:
+	// populateTree(1); // Will populate with parents, "Cyber system verification" (active), and its children
+	
+	window.onload = function() {
+		populateTree(0); // Default to "Cyber system verification"
+		showPage('pageEnum');
+	};
+
+ </script>
+</html>
