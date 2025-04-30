@@ -31,8 +31,16 @@
     },
     {
       "Title": "Characterize the cyber terrain",
-      "Description": "This description has not yet been developed. This text is a placeholder and a description will be genereated through more decomposition of regulation, frameworks, and other enumerations.",
-      "References": "DODI 5000.89",
+      "Description": "This enumeration is to meet the cooperative and adversarial system verification requirements as well as collect data to inform future testing.",
+      "Intent": [
+        "Cooperatively verify vendor provided documentation for accuracy.",
+        "Cooperatively characterize and verify attack surface.",
+        "Cooperatively characterize and verify impact analysis through critical data.",
+        "Cooperatively characterize and enumerate the system in support of future test objectives.",
+        "Assess opportunities and impacts of adversarial reconnaisance (as applicable).",
+        "Assess opportunities and impacts of adversary discovery."
+      ],
+      "References": "DODM 5000.UY",
       "Data Elements": [],
       "Parents": [
         1
@@ -94,8 +102,8 @@
     },
     {
       "Title": "Inventory system assets",
-      "Description": "This description has not yet been developed. This text is a placeholder and a description will be genereated through more decomposition of regulation, frameworks, and other enumerations.",
-      "References": "D3FEND",
+      "Description": "This enumeration compares the system asset documentation with current assets on the system. Additionally, it collects asset lists to inform future cyber-T&E planning.",
+      "References": "D3-AI",
       "Data Elements": [],
       "Parents": [
         2
@@ -207,6 +215,137 @@
       "Data Elements": [],
       "Parents": [
         12
+      ]
+    },
+    {
+      "Title": "Inventory system or component configurations",
+      "Description": "This enumeration compares the documented configurations and policies with current configurations of the system. Additionally, it collects configurations to inform future cyber-T&E planning",
+      "References": "D3-CI",
+      "Data Elements": [],
+      "Parents": [
+        9
+      ]
+    },
+    {
+      "Title": "Determine active directory configurations",
+      "Description": "This enumeration will collect and compare the settings and policies for domain users and computers.",
+      "References": "D3-CI",
+      "Data Elements": [
+        "Group policy export."
+      ],
+      "Parents": [
+        22
+      ]
+    },
+    {
+      "Title": "Inventory system or component software",
+      "Description": "This enumeration compares the documented software with current installed and running software on the system, it identifies software that could expand the attack surface, and it collects configurations to inform future cyber-T&E planning",
+      "References": "D3-SWI",
+      "Data Elements": [
+        "Running process list.",
+        "Event logs.",
+        "x64 Machines: HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall.",
+        "x86 Machines: HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall.",
+        "File system search for PE or ELF files."
+      ],
+      "Parents": [
+        9
+      ]
+    },
+    {
+      "Title": "Inventory system or component network nodes within a specified subnet",
+      "Description": "This enumeration compares the documented network nodes with current network nodes in the subnet, it identifies nodes that could expand the attack surface, and it identifies network nodes to inform future cyber-T&E planning",
+      "References": "D3-NNI",
+      "Data Elements": [
+        "Passive: DHCP logs",
+        "Passive: DHCP configurations",
+        "Passive: ARP tables",
+        "Passive: PCAP",
+        "Active: Network probe and scan results"
+      ],
+      "Parents": [
+        9
+      ]
+    },
+    {
+      "Title": "Inventory system or component data",
+      "Description": "This enumeration compares the documented critical data with critical data on the system or component, it verifies the existence of critical data identified during the impact analysis, identifies other critical data not included in the impact assessment, and collects data to inform future cyber-T&E planning.",
+      "References": "D3-DI",
+      "Data Elements": [],
+      "Parents": [
+        9
+      ]
+    },
+    {
+      "Title": "Map system or component logical links",
+      "Description": "This enumeration compares the documented logical links with logical links on the system or component, identifies logical links that could expand the attack surface, and collects data to inform future cyber-T&E planning.",
+      "References": "D3-LLM",
+      "Data Elements": [],
+      "Parents": [
+        10
+      ]
+    },
+    {
+      "Title": "Determine connection characteristics of accepting network agents",
+      "Description": "Identify the network agents that are accepting connections and the characteristics of those connections within the system or component.",
+      "References": "D3-LLM",
+      "Data Elements": [],
+      "Parents": [
+        27
+      ]
+    },
+    {
+      "Title": "Determine characteristics of links within the system or component",
+      "Description": "Identify the characteristics of current, previous, or routinely established logical links within the system.",
+      "References": "D3-LLM",
+      "Data Elements": [],
+      "Parents": [
+        27
+      ]
+    },
+    {
+      "Title": "Determine characteristics of links to or from the system or component",
+      "Description": "Identify the characteristics of current, previous, or routinely established logical links to or from the system.",
+      "References": "D3-LLM",
+      "Data Elements": [],
+      "Parents": [
+        27
+      ]
+    },
+    {
+      "Title": "Map system or component access models",
+      "Description": "This enumeration compares the documented administrator, user, group, system, and other access models and controls with access models and controls on the system or component, identifies access models and controls that could expand the attack surface, and collects data to inform future cyber-T&E planning.",
+      "References": "D3-AM",
+      "Data Elements": [],
+      "Parents": [
+        10
+      ]
+    },
+    {
+      "Title": "Map system or component data exchanges",
+      "Description": "This enumeration compares the documented data exchange types, formats, and volumes with data exchanges on the system or component, identifies data exchanges that could expand the attack surface, and collects data to inform future cyber-T&E planning.",
+      "References": "D3-DEM",
+      "Data Elements": [],
+      "Parents": [
+        10
+      ]
+    },
+    {
+      "Title": "Map system or component services dependencies",
+      "Description": "This enumeration compares the documented service dependencies with service dependencies on the system or component, identifies service dependencies that could expand the attack surface and impact analysis, and collects data to inform future cyber-T&E planning.",
+      "References": "D3-SVCDM",
+      "Data Elements": [],
+      "Parents": [
+        10
+      ]
+    },
+    {
+      "Title": "Map system or component system dependencies",
+      "Description": "This enumeration compares the documented system dependencies with system dependencies on the system or component, identifies system dependencies that could expand the attack surface and impact analysis, and collects data to inform future cyber-T&E planning.",
+      "References": "D3-SYSDM",
+      "Data Elements": [],
+      "Parents": [
+        10
       ]
     }
   ]
