@@ -48,7 +48,12 @@
     },
     {
       "Title": "System prevents cyber exploitation and attack",
-      "Description": "This description has not yet been developed. This text is a placeholder and a description will be genereated through more decomposition of regulation, frameworks, and other enumerations.",
+      "Description": "This enumeration is to meet the cooperative and adversarial system verification requirements.",
+      "Intent": [
+        "Cooperatively identify known vulnerabilities.",
+        "Cooperatively assess weaknesses to identify unknown vulnerabilities.",
+        "Assess adversarial exploitation opportunities and identify impacts of adversarial cyber exploitation."
+      ],
       "References": "DODI 5000.89",
       "Data Elements": [],
       "Parents": [
@@ -347,6 +352,51 @@
       "Parents": [
         10
       ]
+    },
+    {
+      "Title": "Assess identity/agent, authentication, access management and control",
+      "Description": "This enumeration assesses weaknesses and vulnerabilities within the identified component's identity/agent, authentication, access management and control as well as assess impacts of those identified weaknesses and vulnerabilities.",
+      "References": "CSF2.PR.AA",
+      "Data Elements": [],
+      "Parents": [
+        3
+      ]
+    },
+    {
+      "Title": "Assess component's application security and hardening",
+      "Description": "This enumeration assesses weaknesses and vulnerabilities within the identified component's applications (PE/ELF) as well as assess impacts of those identified weaknesses and vulnerabilities. Application Hardening makes an executable application more resilient to a class of exploits which either introduce new code or execute unwanted existing code. These techniques may be applied at compile-time or on an application binary.",
+      "References": "D3-AH",
+      "Data Elements": [],
+      "Parents": [
+        3
+      ]
+    },
+    {
+      "Title": "Assess component's platform security and hardening",
+      "Description": "This enumeration assesses weaknesses and vulnerabilities within the identified component's platforms (OS, RTOS, Docker) as well as assess impacts of those identified weaknesses and vulnerabilities. Hardening components of a Platform with the intention of making them more difficult to exploit.",
+      "References": "D3-PH",
+      "Data Elements": [],
+      "Parents": [
+        3
+      ]
+    },
+    {
+      "Title": "Assess component's infrastructure security and hardening",
+      "Description": "This enumeration assesses weaknesses and vulnerabilities within the identified component's infrastructure (OpenStack, telecommunication, power, other) as well as assess impacts of those identified weaknesses and vulnerabilities. ",
+      "References": "CSF2.PR.IR",
+      "Data Elements": [],
+      "Parents": [
+        3
+      ]
+    },
+    {
+      "Title": "Assess component's credential, message, and data security and hardening",
+      "Description": "This enumeration assesses weaknesses and vulnerabilities within the identified component's credentials, messages, and data while in rest, transit, and processing as well as assess impacts of those identified weaknesses and vulnerabilities. ",
+      "References": "D3.CH, D3.MH, PR.DS, PR.AA",
+      "Data Elements": [],
+      "Parents": [
+        3
+      ]
     }
   ]
 }
@@ -518,7 +568,7 @@
     .details .attribute {
       font-size: 15px;
       color: #222;
-      margin-bottom: 18px;
+      /*margin-bottom: 18px;*/
       line-height: 1.5;
     }
     .details label:first-child {
@@ -655,6 +705,8 @@
   <div id="pageDev" style="display:none">
   </div>
   
+  <br/><br/>
+  
 </body>
 <script>
 	function showPage(pageId) {
@@ -763,7 +815,16 @@
     }
     // Handle arrays and objects
     else if (Array.isArray(value)) {
-      valueDiv.textContent = value.length ? value.join('\r ') : '(none)';
+		if (value.length == 0) valueDiv.textContent = '(none)';
+		else{
+			value.forEach(item => {
+			  const itemDiv = document.createElement('div');
+			  itemDiv.className = 'attribute';
+			  itemDiv.textContent = item;
+			  detailsSection.appendChild(itemDiv);
+			});
+			return;
+		}
     } else if (typeof value === 'object' && value !== null) {
       valueDiv.textContent = JSON.stringify(value, null, 2);
       valueDiv.style.whiteSpace = 'pre-wrap';
