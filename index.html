@@ -365,7 +365,7 @@
     {
       "Title": "Assess component's application security and hardening",
       "Description": "This enumeration assesses weaknesses and vulnerabilities within the identified component's applications (PE/ELF) as well as assess impacts of those identified weaknesses and vulnerabilities. Application Hardening makes an executable application more resilient to a class of exploits which either introduce new code or execute unwanted existing code. These techniques may be applied at compile-time or on an application binary.",
-      "References": "D3-AH",
+      "References": "D3-AH, CWE-699",
       "Data Elements": [],
       "Parents": [
         3
@@ -396,6 +396,195 @@
       "Data Elements": [],
       "Parents": [
         3
+      ]
+    },
+    {
+      "Title": "Assess API/Function errors",
+      "Description": "This enumeration assesses weaknesses with built in functions or external APIs.",
+      "References": "CWE-1228",
+      "Data Elements": [],
+      "Parents": [
+        59
+      ]
+    },
+    {
+      "Title": "Assess authentication errors",
+      "Description": "This enumeration assesses weaknesses with an applications ability to authenticate.",
+      "References": "CWE-1211",
+      "Data Elements": [],
+      "Parents": [
+        60
+      ]
+    },
+    {
+      "Title": "Assess authorization errors",
+      "Description": "This enumeration assesses weaknesses with an applications ability to authorize. Specifically, are do only the appropriate agents have the ability to read, write, and execute.",
+      "References": "CWE-1211",
+      "Data Elements": [],
+      "Parents": [
+        60
+      ]
+    },
+    {
+      "Title": "Assess application behavioral problems",
+      "Description": "This enumeration assesses weaknesses with an applications logic, workflow, actions, and more.",
+      "References": "CWE-438",
+      "Data Elements": [],
+      "Parents": [
+        59
+      ]
+    },
+    {
+      "Title": "Assess application business logic errors",
+      "Description": "This enumeration assesses weaknesses from legitimate use of the applications functionality.",
+      "References": "CWE-840",
+      "Data Elements": [],
+      "Parents": [
+        59
+      ]
+    },
+    {
+      "Title": "Assess application communication channel errors",
+      "Description": "This enumeration assesses weaknesses with an application creating, managing, or removing communication channels and access paths.",
+      "References": "CWE-417",
+      "Data Elements": [],
+      "Parents": [
+        36
+      ]
+    },
+    {
+      "Title": "Assess concurrency issues",
+      "Description": "This enumeration assesses weaknesses that result from running in a concurrent context usually as a result of decentralized or asyncronous execution.",
+      "References": "CWE-557",
+      "Data Elements": [],
+      "Parents": [
+        59
+      ]
+    },
+    {
+      "Title": "Assess data processing errors",
+      "Description": "This enumeration assesses weaknesses that result from the way an application processes data.",
+      "References": "CWE-19",
+      "Data Elements": [],
+      "Parents": [
+        57
+      ]
+    },
+    {
+      "Title": "Assess data neutralization issues",
+      "Description": "This enumeration assesses weaknesses that result from imporper data neutralization.",
+      "References": "CWE-137",
+      "Data Elements": [],
+      "Parents": [
+        57
+      ]
+    },
+    {
+      "Title": "Assess applications handler errors",
+      "Description": "This enumeration assesses weaknesses that result from wrong, missing, or ineffective handlers.",
+      "References": "CWE-429",
+      "Data Elements": [],
+      "Parents": [
+        59
+      ]
+    },
+    {
+      "Title": "Assess applications information management errors",
+      "Description": "This enumeration assesses weaknesses that result the way the application manages sensetive information.",
+      "References": "CWE-199",
+      "Data Elements": [],
+      "Parents": [
+        57
+      ]
+    },
+    {
+      "Title": "Assess applications initialization and cleanup errors",
+      "Description": "This enumeration assesses weaknesses that result from improperly initialized configs or improperly cleaned up data.",
+      "References": "CWE-452",
+      "Data Elements": [],
+      "Parents": [
+        59
+      ]
+    },
+    {
+      "Title": "Assess applications data validation issues",
+      "Description": "This enumeration assesses weaknesses that result from data that is processed and does not conform to expectations.",
+      "References": "CWE-1215",
+      "Data Elements": [],
+      "Parents": [
+        57
+      ]
+    },
+    {
+      "Title": "Assess applications memory buffer errors",
+      "Description": "This enumeration assesses weaknesses that result from memory missuse.",
+      "References": "CWE-1218",
+      "Data Elements": [],
+      "Parents": [
+        58
+      ]
+    },
+    {
+      "Title": "Assess applications type specific or related errors",
+      "Description": "This enumeration assesses weaknesses that result from behavior caused by impropper or lack of type use, checking, handling, or other.",
+      "References": "CWE-189, CWE-465, CWE-133, CWE-136",
+      "Data Elements": [],
+      "Parents": [
+        57
+      ]
+    },
+    {
+      "Title": "Assess applications privilige or permission issues",
+      "Description": "This enumeration assesses weaknesses that result from the initialization and management of permissions.",
+      "References": "CWE-275, CWE-265",
+      "Data Elements": [],
+      "Parents": [
+        60
+      ]
+    },
+    {
+      "Title": "Assess applications resource management",
+      "Description": "This enumeration assesses weaknesses that result from the ways that the component manages resources.",
+      "References": "CWE-411",
+      "Data Elements": [],
+      "Parents": [
+        58
+      ]
+    },
+    {
+      "Title": "Assess application's data management",
+      "Description": "This enumeration assesses weaknesses that result from the application's ability to prevent data and information issues and errors.",
+      "References": "",
+      "Data Elements": [],
+      "Parents": [
+        36
+      ]
+    },
+    {
+      "Title": "Assess application's resource and memory management",
+      "Description": "This enumeration assesses weaknesses that result from the application's ability to prevent resource and memory issues and errors.",
+      "References": "",
+      "Data Elements": [],
+      "Parents": [
+        36
+      ]
+    },
+    {
+      "Title": "Assess application's logic execution",
+      "Description": "This enumeration assesses weaknesses that result from the application's logic, behavior, and processes.",
+      "References": "",
+      "Data Elements": [],
+      "Parents": [
+        36
+      ]
+    },
+    {
+      "Title": "Assess application's audit, authentication, and authorization",
+      "Description": "This enumeration assesses weaknesses that result from the application's logging, agent authorization, agent authentication, privilege management, and permission management.",
+      "References": "",
+      "Data Elements": [],
+      "Parents": [
+        36
       ]
     }
   ]
@@ -681,22 +870,28 @@
     <h2>1. Purpose</h2>
     <div class="attribute">The purpose of CTEs are to enable cyber test planners to design credible test campaigns, enable integrated test, lower the barrier of entry for testers, and standardize cyber test design across organizations. Standardizing test design will create second order effects of easing trainig, making RFIs more clear, as well as making lab and range requirements less ambiguous.</div>
 
-    <h2>2. Usage</h2>
+	<h2>2. Cyber Test Campaigns</h2>
+    <div class="attribute">Cyber test campaigns are to be integrated with the overall test campaign. Campaign planning will consist of three main steps: test strategy brief, test design, then data management and analysis plan. The test strategy brief will cover the high level strategy to the test campaign. The test design will generate the questions that need to be answered in the form of objectives, critical operational issues, and measures. The test design is what the CTEs will primarily support. After the test design, the DMAP will identify the data elements that need to be collected in order to answer the questions identified in the test design. The CTEs will provide general data element recommendations, but it actual data elements should be tailored per system. Once campaign planning is drafted, the measures/objectives will be aggregated into activities, and those activities will be performed during events.</div>
+
+
+    <h2>3. Usage</h2>
     <div class="attribute">CTEs are to be used to structure the test design process. Once a test strategy brief (TSB) has been performed, the test design processes starts. In an ideal world, all CTEs that can be applied to the system will be integrated into the test design. The test design items will then be prioritized through test concept briefs (TCBs).</div>
-    <div class="attribute">System verification portion of the test design will be comprised of high level general test objectives (GTOs) which are broken out into specific test objectives (STOs) and then broken out into measurable and testable measures of performance (MOPs). The CTEs will assist in generating GTOs, STOs, and MOPs. An example being, if a test organization was requested to test the integration of an enterprise intrusion detection system in a DT&E context, then a GTO would be "Systems ability to detect cyber exploitation and attack" with STOs breaking down the specifics (such as out of band and in band) and MOPs that measure the coverage and relevance of PCAP, event logs, and other data elements.</div>
-    <div class="attribute">Mission validation usage will be described at a later point.</div>
+    <br/>
+	<div class="attribute">System verification portion of the test design will be comprised of high level general test objectives (GTOs) which are broken out into specific test objectives (STOs) and then broken out into measurable and testable measures of performance (MOPs). The CTEs will assist in generating GTOs, STOs, and MOPs. An example being, if a test organization was requested to test the integration of an enterprise intrusion detection system in a DT&E context, then a GTO would be "Systems ability to detect cyber exploitation and attack" with STOs breaking down the specifics (such as log collection and network analysis) and MOPs that measure the coverage and relevance of PCAP, event logs, and other data elements.</div>
+    <br/>
+	<div class="attribute">TODO: Mission validation usage will be described at a later point.</div>
 	
 	
-    <h3>2.1 Dependencies</h3>
+    <h3>3.1 Dependencies</h3>
     <div class="attribute">All CTEs that are applicable to the system should be tested. However, the use of developmental evaluation frameworks (DEF), operational evaluation frameworks (OEF), integrated decision support keys (IDSK), and fielding decision (FD) / operational acceptance (OA) criteria. Additionally, test design may also be influenced by contractor testing, independent testing, live testing, and lab testing.</div>
 	
-	<h3>2.2 Outputs</h3>
-    <div class="attribute">I need to elaborate on how this should help generate a test design with common identified data elements between DT and OT.</div>
+	<h3>3.2 Outputs</h3>
+    <div class="attribute">If structuring the test design with the structure of the CTEs, then test design will identify the systems ability to prevent, detect, contain, mitigate, recover, and adapt. This will inform effectiveness, suitability, and survivability based decisions. By mapping the test design to CTEs, the planner can identify what has and has not been tested as well as if the system met the system and mission requirements.</div>
 
-    <h2>3. Background</h2>
+    <h2>4. Background</h2>
     <div class="attribute">Write an overview of the background of CTEs (how they were developed) and put the table that cross walks them.</div>
 	
-    <h3>3.1 CTE Creation</h3>
+    <h3>4.1 CTE Creation</h3>
     <div class="attribute">Describe the regulation decomposition (DODM 5000.UY & CSEIG) then describe the items included in the crosswalk (enumerations, ATT&CK, D3FEND, CSF2, SPARTA) then describe the cooperative/adversarial relationship, then describe the SV vs MV, then describe </div>
   </section>
   </div>
