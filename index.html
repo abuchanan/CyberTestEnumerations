@@ -534,7 +534,7 @@
       ]
     },
     {
-      "Title": "Assess applications privilige or permission issues",
+      "Title": "Assess applications privilege or permission issues",
       "Description": "This enumeration assesses weaknesses that result from the initialization and management of permissions.",
       "References": "CWE-275, CWE-265",
       "Data Elements": [],
@@ -585,6 +585,125 @@
       "Data Elements": [],
       "Parents": [
         36
+      ]
+    },
+    {
+      "Title": "Determine improper handling of length parameter",
+      "Description": "The product parses a formatted message or structure, but it does not handle or incorrectly handles a length field that is inconsistent with the actual length of the associated data. If an attacker can manipulate the length parameter associated with an input such that it is inconsistent with the actual length of the input, this can be leveraged to cause the target application to behave in unexpected, and possibly, malicious ways. One of the possible motives for doing so is to pass in arbitrarily large input to the application. Another possible motivation is the modification of application state by including invalid data for subsequent properties of the application. Such weaknesses commonly lead to attacks such as buffer overflows and execution of arbitrary code.",
+      "References": "CWE-130",
+      "Test Activities": [
+        "Fuzzing",
+        "Static Analysis"
+      ],
+      "Impacts": [
+        "Confidentiality",
+        "Integrity"
+      ],
+      "Data Elements": [],
+      "Parents": [
+        47
+      ]
+    },
+    {
+      "Title": "Determine improper handling of missing elements",
+      "Description": "The product receives input from an upstream component, but it does not handle or incorrectly handles when there is a missing, unexpected, or inconsistent special element.",
+      "References": "CWE-166, CWE-167, CWE-168",
+      "Test Activities": [
+        "Fuzzing"
+      ],
+      "Impacts": [
+        "Confidentiality",
+        "Integrity",
+        "Availability",
+        "Access Control",
+        "Non-Repudiation"
+      ],
+      "Data Elements": [],
+      "Parents": [
+        47
+      ]
+    },
+    {
+      "Title": "Determine if data collapses into unsafe values",
+      "Description": "The product filters data in a way that causes it to be reduced or collapsed into an unsafe value that violates an expected security property.",
+      "References": "CWE-182",
+      "Test Activities": [
+        "Static Analysis"
+      ],
+      "Impacts": [
+        "Access Control"
+      ],
+      "Data Elements": [],
+      "Parents": [
+        47
+      ]
+    },
+    {
+      "Title": "Determine if values are handled properly",
+      "Description": "The product does not properly handle when the expected number of values for parameters, fields, or arguments is not provided in input, or if those values are undefined.",
+      "References": "CWE-229",
+      "Test Activities": [],
+      "Impacts": [
+        "Integrity"
+      ],
+      "Data Elements": [],
+      "Parents": [
+        47
+      ]
+    },
+    {
+      "Title": "Determine if parameters are handled properly",
+      "Description": "The product does not properly handle when the expected number of parameters, fields, or arguments is not provided in input, or if those parameters are undefined.",
+      "References": "CWE-233",
+      "Test Activities": [
+        "Fuzzing",
+        "Static Analysis"
+      ],
+      "Impacts": [
+        "Integrity"
+      ],
+      "Data Elements": [],
+      "Parents": [
+        47
+      ]
+    },
+    {
+      "Title": "Determine if structural elements are handled properly",
+      "Description": "The product does not handle or incorrectly handles inputs that are related to complex structures.",
+      "References": "CWE-237",
+      "Test Activities": [],
+      "Impacts": [
+        "Integrity"
+      ],
+      "Data Elements": [],
+      "Parents": [
+        47
+      ]
+    },
+    {
+      "Title": "Determine if unexpected data types are handled properly",
+      "Description": "The product does not handle or incorrectly handles when a particular element is not the expected type, e.g. it expects a digit (0-9) but is provided with a letter (A-Z).",
+      "References": "CWE-241",
+      "Test Activities": [],
+      "Impacts": [
+        "Integrity"
+      ],
+      "Data Elements": [],
+      "Parents": [
+        47
+      ]
+    },
+    {
+      "Title": "Determine if compressed data is handled properly",
+      "Description": "The product does not handle or incorrectly handles a compressed input with a very high compression ratio that produces a large output. An example of data amplification is a \"decompression bomb,\" a small ZIP file that can produce a large amount of data when it is decompressed.",
+      "References": "CWE-409",
+      "Test Activities": [],
+      "Impacts": [
+        "Availability"
+      ],
+      "Data Elements": [],
+      "Parents": [
+        47
       ]
     }
   ]
